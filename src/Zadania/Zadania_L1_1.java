@@ -1,18 +1,18 @@
 package Zadania;
 
 public class Zadania_L1_1 {
-    public static void z1()
+    public static void z1_1()
     {
         System.out.println("Wojciech 30");
     }
-    public static void z2(int a, int b)
+    public static void z2_1(int a, int b)
     {
         System.out.println(a+b);
         System.out.println(a-b);
         System.out.println(a*b);
     }
 
-    public static boolean z3(int a)
+    public static boolean z3_1(int a)
     {
         if (a%2==0)
         {
@@ -23,7 +23,7 @@ public class Zadania_L1_1 {
         System.out.println("false");
         return false;
     }
-    public static boolean z4(int a)
+    public static boolean z4_1(int a)
     {
         if ((a%3==0) && (a%5==0))
         {
@@ -33,16 +33,16 @@ public class Zadania_L1_1 {
         System.out.println("false");
         return false;
     }
-    public static int z5(int a)
+    public static int z5_1(int a)
     {
         return a*a*a;
     }
-    public static double z6(int a)
+    public static double z6_1(int a)
     {
         double wy = Math.sqrt(a);
         return wy;
     }
-    public static boolean z7(double a,double b,double c)
+    public static boolean z7_1(double a, double b, double c)
     {
         if (a>b&&a>c)
         {
