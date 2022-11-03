@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import Zadania.Zadania_L1_1;
 import Zadania.Zadania_L1_2;
+import Zadania.Zadania_L1_3;
 
 public class Main {
     public static void main(String[] args)
@@ -20,6 +21,7 @@ public class Main {
 
 
     }
+
 
 
 
