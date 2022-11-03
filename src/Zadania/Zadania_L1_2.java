@@ -100,8 +100,137 @@ public class Zadania_L1_2
             }
         }
     }
-    public static void z3_2(int x,int y,int z)
+    public static void z3_2()
     {
+        Scanner in  = new Scanner(System.in);
+        int x = in.nextInt();
+        int y = in.nextInt();
+        int z = in.nextInt();
+        if (x>y && x >z)
+        {
+            System.out.println(x);
+            if (y>z)
+            {
+                System.out.println(y);
+                System.out.println(z);
+            }
+            else
+            {
+                System.out.println(z);
+                System.out.println(y);
+            }
+        }
+        if (y>x&&y>z)
+        {
+            System.out.println(y);
+            if (x>z)
+            {
+                System.out.println(x);
+                System.out.println(z);
+            }
+            else
+            {
+                System.out.println(z);
+                System.out.println(x);
+            }
+        }
+        if (z>x&&z>y)
+        {
+            System.out.println(z);
+            if (x>y)
+            {
+                System.out.println(x);
+                System.out.println(y);
+            }
+            else
+            {
+                System.out.println(y);
+                System.out.println(x);
+            }
+        }
+    }
 
+    public static void z4_2()
+    {
+        Scanner in  = new Scanner(System.in);
+        System.out.println("Deszcz?");
+        boolean rain = in.nextBoolean();
+        System.out.println("Autobus?");
+        boolean autobus = in.nextBoolean();
+
+        if (rain && autobus)
+        {
+            System.out.println("Weź parasol");
+            System.out.println("Dostaniesz się na uczelnie");
+        }
+        if (rain && !autobus)
+        {
+            System.out.println("Nie dostaniesz się na uczelnie");
+        }
+        if (!rain && autobus)
+        {
+            System.out.println("Dostaniesz się na uczelnie");
+            System.out.println("Miłego dnia i pięknej pogody");
+        }
+    }
+
+    public static void z5_2()
+    {
+        boolean premia;
+        boolean discount;
+        Scanner in=new Scanner(System.in);
+        System.out.println("Zniżka?");
+        discount=in.nextBoolean();
+        System.out.println("Premia?");
+        premia=in.nextBoolean();
+        if (!discount||premia)
+        {
+            System.out.println("Możesz kupić samochód!");
+            System.out.println("Zniżki na samochód nie ma");
+        }
+        if (!discount||!premia)
+        {
+            System.out.println("Zakup samochód trzeba odłożyć na później...");
+            System.out.println("Zniżki na samochód nie ma");
+        }
+        if (discount||premia)
+        {
+            System.out.println("Możesz kupić samochód !");
+        }
+    }
+
+    public static void z6_2()
+    {
+        double a,b;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podaj a");
+        a=in.nextDouble();
+        System.out.println("Podaj b");
+        b=in.nextDouble();
+        System.out.println("Wybierz działanie + - * / ");
+        String st=in.next();
+        switch (st)
+        {
+            case "+":
+                System.out.println(a+b);
+                break;
+            case "-":
+                System.out.println(a-b);
+                break;
+            case "*":
+                System.out.println(a*b);
+                break;
+            case "/":
+                if (b!=0)
+                {
+                    System.out.println(a/b);
+                    break;
+                }
+                System.out.println("dzielenie przez 0");
+                break;
+            default:
+                System.out.println("nierozpoznane działanie");
+                break;
+        }
     }
 }
