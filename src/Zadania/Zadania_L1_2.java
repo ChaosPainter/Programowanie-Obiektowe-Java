@@ -37,9 +37,9 @@ public class Zadania_L1_2
         String st = in.next();
         System.out.println("podaj X");
         double X= in.nextDouble();
-        if (st=="a"||st=="b"||st=="c")
+        if (st.equals("a")||st.equals("b")||st.equals("c"))
         {
-            if (st=="a")
+            if (st.equals("a"))
             {
                 if (X>0)
                 {
@@ -61,7 +61,7 @@ public class Zadania_L1_2
                 }
 
             }
-            if (st=="b")
+            if (st.equals("b"))
             {
                 if (X>=1)
                 {
@@ -76,7 +76,7 @@ public class Zadania_L1_2
                 }
 
             }
-            if (st=="c")
+            if (st.equals("c"))
             {
                 if (X>2)
                 {
@@ -99,6 +99,10 @@ public class Zadania_L1_2
 
             }
         }
+        else
+        {
+            System.out.println("błąd");
+        }
     }
     public static void z3_2()
     {
@@ -106,46 +110,46 @@ public class Zadania_L1_2
         int x = in.nextInt();
         int y = in.nextInt();
         int z = in.nextInt();
-        if (x>y && x >z)
+        if (x<y && x <z)
         {
             System.out.println(x);
             if (y>z)
             {
-                System.out.println(y);
                 System.out.println(z);
+                System.out.println(y);
             }
             else
             {
-                System.out.println(z);
                 System.out.println(y);
+                System.out.println(z);
             }
         }
-        if (y>x&&y>z)
+        if (y<x&&y<z)
         {
             System.out.println(y);
             if (x>z)
             {
-                System.out.println(x);
                 System.out.println(z);
+                System.out.println(x);
             }
             else
             {
-                System.out.println(z);
                 System.out.println(x);
+                System.out.println(z);
             }
         }
-        if (z>x&&z>y)
+        if (z<x&&z<y)
         {
             System.out.println(z);
             if (x>y)
             {
-                System.out.println(x);
                 System.out.println(y);
+                System.out.println(x);
             }
             else
             {
-                System.out.println(y);
                 System.out.println(x);
+                System.out.println(y);
             }
         }
     }
